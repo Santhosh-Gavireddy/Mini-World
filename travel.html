@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-World</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <header class="container-fluid part1 p-0 mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark part1 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand ps-5" href="index.html"><img class="w-25" src="./assets/h-logo.png" alt="" srcset=""></a>
+                <button
+                    class="navbar-toggler shadow-none border-0"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="offcanvas offcanvas-start"
+                    style="background-color: rgba(5, 114, 99, 0.15); backdrop-filter: blur(10px);
+                    color: white;"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            Menu
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close text-reset btn-close-white shadow-none border-0"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="food.html">Food</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="room.html">Hotel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active dsh"
+                                    aria-current="page"
+                                    href="travel.html"
+                                    >Travel</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="booktrip.html">MAKE A TRIP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="contactus.html">Contact us</a>
+                            </li>
+                        </ul>
+                        <button class="border-0 but d-flex justify-content-center align-items-center"><i class="bi bi-envelope-arrow-up"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        <section class="container-fluid travbg p-5">
+            <div class="row">
+                <div class="col-lg-12 text-center p-3 text-white d-flex justify-content-center align-items-center">
+                    <div class="mt-3 pt-3">
+                        <h1>LIFE IS <br> TOO SHORT AND <br> WORLD IS SOO WIDE.</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid text-center mt-4">
+            <div class="row">
+                <div class="col-12 text-center d-flex justify-content-center align-items-center">
+                    <div class="search-bar w-50">
+
+                        <input type="text" class="form-control shadow-none search-input" placeholder="Search">
+                        <button class="search-icon shadow-none border-0"><i class="bi bi-search text-white text-end"></i></button>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid part3 p-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <h1 class="text-center clc pb-5">Choose Your DESTINATION!</h1>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/advntr.png" alt="Title" />
+                        <div class="card-body">
+                            <h12 class="opacity-50">#Mini-World</h12>
+                            <h4 class="mt-2">ADVENTURE TRAVEL</h4>
+                            <p class="rate">3.9<i class="bi ps-1 bi-star-fill"></i></p>
+                        </div>
+                        <div class="card-footer" style="background-color:#024950;">
+                            <a href="#book" style="text-decoration:none;"><h6 class="text-white text-center">Book Now</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/devotion.png" alt="Title" />
+                        <div class="card-body">
+                            <h12 class="opacity-50">#Mini-World</h12>
+                            <h4 class="mt-2">DEVOTIONAL TRAVEL</h4>
+                            <p class="rate">4.2<i class="bi ps-1 bi-star-fill"></i></p>
+                        </div>
+                        <div class="card-footer" style="background-color:#024950;">
+                            <a href="#book" style="text-decoration:none;"><h6 class="text-white text-center">Book Now</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/wtrav.png" alt="Title" />
+                        <div class="card-body">
+                            <h12 class="opacity-50">#Mini-World</h12>
+                            <h4 class="mt-2">WORLD WIDE TRAVEL</h4>
+                            <p class="rate">4.5<i class="bi ps-1 bi-star-fill"></i></p>
+                        </div>
+                        <div class="card-footer" style="background-color:#024950;">
+                            <a href="#book" style="text-decoration:none;"><h6 class="text-white text-center">Book Now</h6></a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+
+       
+
+        <section class="container-fluid pb-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row p-0 boxx">
+                          <div class="col-md-6 p-0">
+                            <img src="./assets/airport.png" alt="Coastal Scene" class="img-fluid">
+                          </div>
+                          <div class="col-md-6 p-5 d-flex justify-content-center align-items-center" style="min-height: 50vh;">
+                            <div>
+                              <h2 class="clc">Transportation</h2>
+                              <p>Explore the globe with ease, navigating through five top-tier airport facilities. From Dubai's dynamic hub to Singapore's cutting-edge terminals, embark on a world tour where every connection is a gateway to adventure.</p>
+                              <a href="#"><button class="goton">Learn more</button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid pb-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row p-0 boxx">
+                          <div class="col-md-6 p-5 d-flex justify-content-center align-items-center" style="min-height: 50vh;">
+                            <div>
+                              <h2 class="clc">Road Trip Guide</h2>
+                              <p>Gear up for your road trip adventure with insider tips on routes, rental cars, and local insights. Explore diverse landscapes and vibrant cultures, making every mile a memory to cherish.</p>
+                              <a href="#"><button class="goton">Learn more</button></a>
+                            </div>
+                          </div>
+                          <div class="col-md-6 p-0">
+                            <img src="./assets/rd.png" alt="Coastal Scene" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="pb-2">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="mb-3 clc">Available Destinations! </h3>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a class="btn btn-success shadow-none border-0 mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
+                        <a class="btn btn-success shadow-none border-0 mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+        
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="./assets/dest1.png">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Blue City</h4>
+                                                    <p class="card-text">Most Visited destination Recently.</p>
+                                                    <a href="" style="text-decoration:none;"><p>More</p></a>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="./assets/dest2.png">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Mount Namaa</h4>
+                                                    <p class="card-text">Family travel mount trecking.</p>
+                                                    <a href="" style="text-decoration: none;"><p>More</p></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="./assets/dest3.png">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Aroma Deep Valley</h4>
+                                                    <p class="card-text">Famous for local traditionals.</p>
+                                                    <a href="" style="text-decoration: none;"><p>More</p></a>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="./assets/dest4.png">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Paris</h4>
+                                                    <p class="card-text">Mostly famous for wedding purpose.</p>
+                                                    <a href="" style="text-decoration: none;"><p>More</p></a>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="./assets/dest5.png">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">New York City</h4>
+                                                    <p class="card-text">Night lights speaks on roads.</p>
+                                                    <a href="" style="text-decoration: none;"><p>More</p></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="./assets/dest6.png">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Dubai City</h4>
+                                                    <p class="card-text">Well beloved place to travel.</p>
+                                                    <a href="" style="text-decoration: none;"><p>More</p></a>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="container-fluid p-5 part5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="clc">KanyaKumari</h2>
+                    <p>Major Keys of our travel</p>
+                    <ul class="list-group opacity-75 w-75">
+                        <li class="list-group-item">Flexible Guide</li>
+                        <li class="list-group-item">Limited People</li>
+                        <li class="list-group-item">Local Food</li>
+                        <li class="list-group-item">Road Jeep Rental</li>
+                        <li class="list-group-item">Camera</li>
+                    </ul>
+                    <h4 class="pt-3"><i class="bi bi-currency-rupee"></i>5990 <span class="prc">Inclue Tax</span></h4>
+
+                    <a href="travelvalid.html"><button class="btn btn-success shadow-none border-0 mt-3 mb-2 animate__animated animate__pulse animate__infinite">Order Now</button>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="">Gallery</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="">KanyaKumari</h4>
+                            <img src="./assets/buyplce.png" class="img-fluid zoom" alt="Cake">
+                            <p>SunRise View</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="">Temple</h4>
+                            <img src="./assets/buyplce2.png" class="img-fluid zoom" alt="Ice Cream">
+                            <p>Free temple visit</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="">Beach</h4>
+                            <img src="./assets/buyplce3.png" class="img-fluid zoom" alt="Dessert">
+                            <p>Night Beach Party</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-5 part5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="clc">Kerala Backwaters</h2>
+                    <p>Major Keys of our travel</p>
+                    <ul class="list-group opacity-75 w-75">
+                        <li class="list-group-item">Flexible Guide</li>
+                        <li class="list-group-item">Limited People</li>
+                        <li class="list-group-item">Local Food</li>
+                        <li class="list-group-item">Road Jeep Rental</li>
+                        <li class="list-group-item">Camera</li>
+                    </ul>
+                    <h4 class="pt-3"><i class="bi bi-currency-rupee"></i>7990 <span class="prc">Inclue Tax</span></h4>
+
+                    <a href="travelvalid.html"><button class="btn btn-success shadow-none border-0 mt-3 mb-2 animate__animated animate__pulse animate__infinite">Order Now</button>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="">Gallery</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="">Kerala</h4>
+                            <img src="./assets/ker1.png" class="img-fluid zoom" alt="Cake">
+                            <p>Boat Ride on lake</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="">Temple</h4>
+                            <img src="./assets/ker2.png" class="img-fluid zoom" alt="Ice Cream">
+                            <p>Kerala Treditionals</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="">Beach</h4>
+                            <img src="./assets/ker3.png" class="img-fluid zoom" alt="Dessert">
+                            <p>Villages of kerala</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-5 part5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="clc">Varanasi</h2>
+                    <p>Major Keys of our travel</p>
+                    <ul class="list-group opacity-75 w-75">
+                        <li class="list-group-item">Flexible Guide</li>
+                        <li class="list-group-item">Limited People</li>
+                        <li class="list-group-item">Local Food</li>
+                        <li class="list-group-item">Road Jeep Rental</li>
+                        <li class="list-group-item">Camera</li>
+                    </ul>
+                    <h4 class="pt-3"><i class="bi bi-currency-rupee"></i>12990 <span class="prc">Inclue Tax</span></h4>
+
+                    <a href="travelvalid.html"><button class="btn btn-success shadow-none border-0 mt-3 mb-2 animate__animated animate__pulse animate__infinite">Order Now</button>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="">Gallery</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="">Varanasi</h4>
+                            <img src="./assets/var1.png" class="img-fluid zoom" alt="Cake">
+                            <p>Boat Views</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="">Temple</h4>
+                            <img src="./assets/var2.png" class="img-fluid zoom" alt="Ice Cream">
+                            <p>Indian Treditions</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="">Devotional Pooja</h4>
+                            <img src="./assets/var3.png" class="img-fluid zoom" alt="Dessert">
+                            <p>Devotional visits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="book" class="container-fluid form-fill pt-5 p-5">
+            <h2 class="text-center text-white border-bottom pb-4 pt-3">Fill the Feild</h2>
+            <div class="row">
+                <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                   <div class="row">
+                    <div class="col-6">
+                        
+                     <form action=""><h1>Date</h1>
+                        <input type="date" name="date" placeholder="Date" id="date"> </form> 
+                     <form action=""><h1>Time</h1>
+                            <input type="time" name="time" placeholder="Time" id="time"> </form>
+                     <form action=""><h1>People</h1>
+                                <input type="text" name="people" placeholder="People" id="people"> </form>
+                
+                    </div>
+                    <div class="col-6">
+                        <form action=""><h1>Name</h1>
+                            <input type="name" name="username" placeholder="Name" id="name"> </form> 
+                         <form action=""><h1>Phone</h1>
+                                <input type="tel" name="phone" placeholder="Phone" id="phone"> </form>
+                         <form action=""><h1>Email</h1>
+                                    <input type="email" name="email" placeholder="Email" id="email"> </form>    
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center text-center"><button class=" w-25 mt-5 "  onclick="Loan()">Book Now</button></div>
+                   </div>
+                </div>
+                <div class="col-12 col-lg-6 main-button d-flex justify-content-center align-items-center">
+                    <img class="w-100 p-5" src="./assets/world1.png" alt="" srcset="">
+                </div>
+                
+            </div>
+        </section>
+    
+
+        <section class="container-fluid part7">
+            <div class="row p-5">
+                <h4 class="clc mb-5">Reviews & Ratings</h4>
+                <div class="col-lg-6 border-bottom">
+                    <p class="rate">4.1<i class="bi ps-1 bi-star-fill"></i></p>
+                    <h5>Nice Travel! Experience</h5>
+                    <br>
+                    <p class="opacity-50">#Mini-World</p>
+                    <p class="opacity-75"><i class="bi bi-person-circle"></i> Vijay</p>
+                </div>
+                <div class="col-lg-6 mt-2 border-bottom">
+                    <p class="rate">4.1<i class="bi ps-1 bi-star-fill"></i></p>
+                    <h5>Safe & Secure, Effortable</h5>
+                    <br>
+                    <p class="opacity-50">#Mini-World</p>
+                    <p class="opacity-75"><i class="bi bi-person-circle"></i> Vindya</p>
+                </div>
+                <div class="col-lg-6 mt-2 border-bottom">
+                    <p class="rate">5.0<i class="bi ps-1 bi-star-fill"></i></p>
+                    <h5>Just Awsome!!</h5>
+                    <br>
+                    <p class="opacity-50">#Mini-World</p>
+                    <p class="opacity-75"><i class="bi bi-person-circle"></i> Jahnavi</p>
+                </div>
+                <div class="col-lg-6 mt-2 border-bottom">
+                    <p class="rate">4.1<i class="bi ps-1 bi-star-fill"></i></p>
+                    <h5>Nice food service</h5>
+                    <br>
+                    <p class="opacity-50">#Mini-World</p>
+                    <p class="opacity-75"><i class="bi bi-person-circle"></i> Ria</p>
+                </div>
+                <div class="col-lg-6 mt-2 border-bottom">
+                    <p class="rate">3.1<i class="bi ps-1 bi-star-fill"></i></p>
+                    <h5>So Scary but ebjoyed</h5>
+                    <br>
+                    <p class="opacity-50">#Mini-World</p>
+                    <p class="opacity-75"><i class="bi bi-person-circle"></i> Amelia</p>
+                </div>
+                
+            </div>
+        </section>
+
+
+        <footer class="container-fluid part1 d-flex justify-content-center align-items-center p-5">
+            <div class="row">
+              <div class="col-md-2 footer-block">
+                <img class="w-50" src="./assets/h-logo.png" alt="" srcset="">
+                <p><i class="bi bi-c-circle"></i>2024</p>
+                <p>MINI-WORLD PVT LTD</p>
+              </div>
+              <div class="col-md-2 footer-block">
+                <h5>Company</h5>
+                <p>About</p>
+                <p>Carrer</p>
+                <p>Travel</p>
+                <p>Food</p>
+                <p>Visit</p>
+              </div>
+              <div class="col-md-2 footer-block">
+                <h5>Contact us</h5>
+                <p>Help & Support</p>
+                <p>Partner with us</p>
+                <p>Ride with us</p> 
+              </div>
+              <div class="col-md-2 footer-block">
+                <h5>Legal</h5>
+                <p>Terms & Conditions</p>
+                 <p>Cookie Policy</p>
+                  <p>Privacy Policy</p>
+              </div>
+              <div class="col-md-4 footer-block">
+                <h5>We Reach Upto</h5>
+                <p>Hyderabad</p>
+                <p>Kakinada</p>
+                <p>Banglore</p>
+                <p>Chenai</p>
+                <p><div class="btn-group">
+                  <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      id="triggerId"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                  >
+                      More
+                  </button>
+                  <div
+                      class="dropdown-menu dropdown-menu-start"
+                      aria-labelledby="triggerId"
+                  >
+                      <a class="dropdown-item" href="#">Pune</a>
+                      <a class="dropdown-item" href="#">Gujarath</a>
+                      <a class="dropdown-item" href="#">Manglore</a>
+                      <a class="dropdown-item" href="#">Delhi</a>
+                  </div>
+                </div>
+                </p>
+              </div>
+            </div>
+          </footer>
+          
+          <a href="#" id="allb" class="btn btn-lg shadow-none border-0 btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+  
+      <script src="logic.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  </body>
+  </html>

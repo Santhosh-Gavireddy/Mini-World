@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-World</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <header class="container-fluid part1 p-0 mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark part1 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand ps-5" href="index.html"><img class="w-25" src="./assets/h-logo.png" alt="" srcset=""></a>
+                <button
+                    class="navbar-toggler shadow-none border-0"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="offcanvas offcanvas-start"
+                    style="background-color: rgba(5, 114, 99, 0.15); backdrop-filter: blur(10px);
+                    color: white;"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            Menu
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close text-reset btn-close-white shadow-none border-0"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="food.html">Food</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active dsh"
+                                    aria-current="page"
+                                    href="room.html"
+                                    >Hotel</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="travel.html">Travel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="travel.html">MAKE A TRIP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="contactus.html">Contact us</a>
+                            </li>
+                        </ul>
+                        <button class="border-0 but d-flex justify-content-center align-items-center"><i class="bi bi-envelope-arrow-up"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+        <section class="container-fluid hotel p-5">
+            <div class="row">
+                <div class="col-lg-6 text-center p-3  d-flex justify-content-center align-items-center">
+                    <div class="mt-3 pt-3">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center p-3 text-white d-flex justify-content-center align-items-center">
+                    <div class="mt-5 pt-5">
+                        <h1>Experience cozy<br> COMFORT and convenience <br> in our hotel rooms.</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid text-center mt-4">
+            <div class="row">
+                <div class="col-12 text-center d-flex justify-content-center align-items-center">
+                    <div class="search-bar w-50">
+
+                        <input type="text" class="form-control shadow-none search-input" placeholder="Search">
+                        <button class="search-icon shadow-none border-0"><i class="bi bi-search text-white text-end"></i></button>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container-fluid part3 p-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <h1 class="text-center clc pb-5">Choose Your ROOM!</h1>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/lux1.png" alt="Title" />
+                        <div class="card-body">
+                            <h12 class="opacity-50">#Mini-World</h12>
+                            <h4 class="mt-2">STANDARD ROOMS</h4>
+                            <p class="rate">4.1<i class="bi ps-1 bi-star-fill"></i></p>
+                        </div>
+                        <div class="card-footer" style="background-color:#024950;">
+                            <a href="#book" style="text-decoration:none;"><h6 class="text-white text-center">Book Now</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/lux2.png" alt="Title" />
+                        <div class="card-body">
+                            <h12 class="opacity-50">#Mini-World</h12>
+                            <h4 class="mt-2">DELUXE ROOMS</h4>
+                            <p class="rate">3.9<i class="bi ps-1 bi-star-fill"></i></p>
+                        </div>
+                        <div class="card-footer" style="background-color:#024950;">
+                            <a href="#book" style="text-decoration:none;"><h6 class="text-white text-center">Book Now</h6></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/lux3.png" alt="Title" />
+                        <div class="card-body">
+                            <h12 class="opacity-50">#Mini-World</h12>
+                            <h4 class="mt-2">LUXURY ROOMS</h4>
+                            <p class="rate">4.5<i class="bi ps-1 bi-star-fill"></i></p>
+                        </div>
+                        <div class="card-footer" style="background-color:#024950;">
+                            <a href="#book" style="text-decoration:none;"><h6 class="text-white text-center">Book Now</h6></a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+
+        <section class="container-fluid p-5 part5">
+            <div class="row">
+                <h4 class="text-start clc">Select Your Location</h4>
+                <div class="col-lg-6">
+                    <form class="loc">
+                        <div class="form-group w-50">
+                          <label for="locationSelect"> Location:</label>
+                          <select class="form-control shadow-none border-0" id="locationSelect">
+                            <option value="1">Kakinada</option>
+                            <option value="2">Hyderabad</option>
+                            <option value="3">Chennai</option>
+                            <option value="4">Banglore</option>
+                            <option value="5">Vizag</option>
+                          </select>
+                        </div>
+                        <button type="submit" class="mt-2">Submit</button>
+                      </form>
+                      <hr class="mt-4 w-75">
+                </div>
+                <div class="col-lg-6 text-start">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-2">
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="mb-3 clc">Available Hotels </h3>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a class="btn btn-success shadow-none border-0 mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                            <i class="bi bi-arrow-left"></i>
+                        </a>
+                        <a class="btn btn-success shadow-none border-0 mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+        
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="./assets/hot1.png">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">G Hotel</h4>
+                                                    <p class="card-text">Most Visited Hotel Recently.</p>
+                                                    <a href="" style="text-decoration:none;"><p>More</p></a>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="./assets/hot2.png">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Arka Hotel</h4>
+                                                    <p class="card-text">Family Hotel Recidency.</p>
+                                                    <a href="" style="text-decoration: none;"><p>More</p></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="./assets/hot3.png">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">SR Grand Hotel</h4>
+                                                    <p class="card-text">Luxury rooms and standard rooms.</p>
+                                                    <a href="" style="text-decoration: none;"><p>More</p></a>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+        
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="./assets/hot4.png">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">GHB Hotel</h4>
+                                                    <p class="card-text">Mostly famous for wedding purpose.</p>
+                                                    <a href="" style="text-decoration: none;"><p>More</p></a>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="./assets/hot5.png">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">SR Exicutive Inn</h4>
+                                                    <p class="card-text">Company Based standard rooms.</p>
+                                                    <a href="" style="text-decoration: none;"><p>More</p></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <img class="img-fluid" alt="100%x280" src="./assets/hot6.png">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">SPR Hotel</h4>
+                                                    <p class="card-text">Well beloved place Couples.</p>
+                                                    <a href="" style="text-decoration: none;"><p>More</p></a>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="container-fluid p-5 part5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="">G-Hotel</h2>
+                    <p>Major Keys of our Hotel</p>
+                    <ul class="list-group opacity-75">
+                        <li class="list-group-item">Flexible Shifting</li>
+                        <li class="list-group-item">100mbps Wifi</li>
+                        <li class="list-group-item">Parking</li>
+                        <li class="list-group-item">Cab Facility</li>
+                        <li class="list-group-item">Service</li>
+                    </ul>
+                    <h4 class="pt-3"><i class="bi bi-currency-rupee"></i>2240 <span class="prc">Inclue Tax</span></h4>
+
+                    <a href="roomvalid.html"><button class="btn btn-success shadow-none border-0 mt-3 mb-2 animate__animated animate__pulse animate__infinite">Book Now</button>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="">Our Specials</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="">Food</h4>
+                            <img src="./assets/food1.png" class="img-fluid zoom" alt="Cake">
+                            <p>Complementary food</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="">Wifi</h4>
+                            <img src="./assets/wifi.png" class="img-fluid zoom" alt="Ice Cream">
+                            <p>Free wifi (100mbps)</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="">Good Ambience</h4>
+                            <img src="./assets/roomamb.png" class="img-fluid zoom" alt="Dessert">
+                            <p>Expert Furniture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-5 part5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="">Arka Hotel</h2>
+                    <p>Major Keys of our Hotel</p>
+                    <ul class="list-group opacity-75">
+                        <li class="list-group-item">Flexible Shifting</li>
+                        <li class="list-group-item">80mbps Wifi</li>
+                        <li class="list-group-item">NO-Parking</li>
+                        <li class="list-group-item">Ac & N/Ac</li>
+                        <li class="list-group-item">Service</li>
+                    </ul>
+                    <h4 class="pt-3"><i class="bi bi-currency-rupee"></i>1892 <span class="prc">Inclue Tax</span></h4>
+                    <a href="roomvalid.html"><button class="btn btn-success shadow-none border-0 mt-3 mb-2 animate__animated animate__pulse animate__infinite">Book Now</button>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="">Our Specials</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 class="">Food</h4>
+                            <img src="./assets/arka1.png" class="img-fluid zoom" alt="Cake">
+                            <p>Complementary food</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="">Wifi</h4>
+                            <img src="./assets/arka2.png" class="img-fluid zoom" alt="Ice Cream">
+                            <p>Free wifi (80mbps)</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="">Good Ambience</h4>
+                            <img src="./assets/arka3.png" class="img-fluid zoom" alt="Dessert">
+                            <p>Pleasent Atmosphere</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="container-fluid part7">
+            <div class="row p-5">
+                <h4 class="clc mb-5">Reviews & Ratings</h4>
+                <div class="col-lg-6 border-bottom">
+                    <p class="rate">4.1<i class="bi ps-1 bi-star-fill"></i></p>
+                    <h5>Nice Rooms! worthy</h5>
+                    <br>
+                    <p class="opacity-50">#Mini-World</p>
+                    <p class="opacity-75"><i class="bi bi-person-circle"></i> Ruksan</p>
+                </div>
+                <div class="col-lg-6 mt-2 border-bottom">
+                    <p class="rate">4.1<i class="bi ps-1 bi-star-fill"></i></p>
+                    <h5>Neat & Clean, Effortable</h5>
+                    <br>
+                    <p class="opacity-50">#Mini-World</p>
+                    <p class="opacity-75"><i class="bi bi-person-circle"></i> Vikram</p>
+                </div>
+                <div class="col-lg-6 mt-2 border-bottom">
+                    <p class="rate">5.0<i class="bi ps-1 bi-star-fill"></i></p>
+                    <h5>Just Awsome!!</h5>
+                    <br>
+                    <p class="opacity-50">#Mini-World</p>
+                    <p class="opacity-75"><i class="bi bi-person-circle"></i> Anvi</p>
+                </div>
+                <div class="col-lg-6 mt-2 border-bottom">
+                    <p class="rate">2.1<i class="bi ps-1 bi-star-fill"></i></p>
+                    <h5>No service</h5>
+                    <br>
+                    <p class="opacity-50">#Mini-World</p>
+                    <p class="opacity-75"><i class="bi bi-person-circle"></i> Akash</p>
+                </div>
+                <div class="col-lg-6 mt-2 border-bottom">
+                    <p class="rate">3.1<i class="bi ps-1 bi-star-fill"></i></p>
+                    <h5>No Responsive staff</h5>
+                    <br>
+                    <p class="opacity-50">#Mini-World</p>
+                    <p class="opacity-75"><i class="bi bi-person-circle"></i> ankush</p>
+                </div>
+                
+            </div>
+        </section>
+          
+        <section id="book" class="container-fluid d-flex justify-content-center align-items-center text-center bck">
+            <div class="row p-5">
+                <h3 class="text-center text-white mb-5">Find Your HOTEL!</h3>
+                <div class="row lay p-5">
+                    <div class="col-lg-6">
+                        <img class="w-75 p-2" src="./assets/roombook.png" alt="" srcset="">
+                    </div>
+                    <div class="col-lg-6 text-center d-flex justify-content-center align-items-center">
+                        <button data-bs-target="#reg" data-bs-toggle="modal" id="main-but">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal fade" id="reg">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header lag">
+                        <img src="./assets/h-logo.png" class="w-25" alt="">
+                        <button data-bs-dismiss="modal" class="btn-close shadow-none border-0"></button>
+                    </div>
+                    <div class="modal-body lag">
+                        <h4 class="text-center">Book Now</h4>
+                        <form action="">
+                            <input type="text" name="name" id="name" class="form-control shadow-none border-0 mb-2" placeholder="Name">
+                            <input type="email" name="email" id="email" class="form-control shadow-none border-0 mb-2" placeholder="E-mail">
+                            <input type="tel" name="tel" id="tel" class="form-control shadow-none border-0 mb-2" placeholder="Mobile Number">
+                            <input type="password" name="password" id="password" class="form-control shadow-none border-0 mb-2" placeholder="Password">
+                            <div class="text-center d-flex justify-content-center subb align-items-center">
+                                <input type="submit" class="form-control w-25  shadow-none border-0 text-center" id="sub">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid part1 d-flex justify-content-center align-items-center p-5">
+            <div class="row">
+              <div class="col-md-2 footer-block">
+                <img class="w-50" src="./assets/h-logo.png" alt="" srcset="">
+                <p><i class="bi bi-c-circle"></i>2024</p>
+                <p>MINI-WORLD PVT LTD</p>
+              </div>
+              <div class="col-md-2 footer-block">
+                <h5>Company</h5>
+                <p>About</p>
+                <p>Carrer</p>
+                <p>Travel</p>
+                <p>Food</p>
+                <p>Visit</p>
+              </div>
+              <div class="col-md-2 footer-block">
+                <h5>Contact us</h5>
+                <p>Help & Support</p>
+                <p>Partner with us</p>
+                <p>Ride with us</p> 
+              </div>
+              <div class="col-md-2 footer-block">
+                <h5>Legal</h5>
+                <p>Terms & Conditions</p>
+                 <p>Cookie Policy</p>
+                  <p>Privacy Policy</p>
+              </div>
+              <div class="col-md-4 footer-block">
+                <h5>We Reach Upto</h5>
+                <p>Hyderabad</p>
+                <p>Kakinada</p>
+                <p>Banglore</p>
+                <p>Chenai</p>
+                <p><div class="btn-group">
+                  <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      id="triggerId"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                  >
+                      More
+                  </button>
+                  <div
+                      class="dropdown-menu dropdown-menu-start"
+                      aria-labelledby="triggerId"
+                  >
+                      <a class="dropdown-item" href="#">Pune</a>
+                      <a class="dropdown-item" href="#">Gujarath</a>
+                      <a class="dropdown-item" href="#">Manglore</a>
+                      <a class="dropdown-item" href="#">Delhi</a>
+                  </div>
+                </div>
+                </p>
+              </div>
+            </div>
+          </footer>
+          
+  
+          <a href="#" id="allb" class="btn btn-lg shadow-none border-0 btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+      <script src="logic.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  </body>
+  </html>

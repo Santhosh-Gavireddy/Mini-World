@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-World</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+<body>
+
+        <header class="container-fluid part1 p-0 mb-5">
+            <nav class="navbar navbar-expand-lg navbar-dark part1 fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand ps-5" href="index.html"><img class="w-25" src="./assets/h-logo.png" alt="" srcset=""></a>
+                    <button
+                        class="navbar-toggler shadow-none border-0"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="offcanvas offcanvas-start"
+                        style="background-color: rgba(5, 114, 99, 0.15); backdrop-filter: blur(10px);
+                        color: white;"
+                        tabindex="-1"
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel"
+                    >
+                        <div class="offcanvas-header text-white border-bottom">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                Menu
+                            </h5>
+                            <button
+                                type="button"
+                                class="btn-close text-reset btn-close-white shadow-none border-0"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link dsh active"
+                                        aria-current="page"
+                                        href="index.html"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dsh" href="category.html">Category</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dsh" href="booktrip.html">MAKE A TRIP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dsh" href="contactus.html">Contact us</a>
+                                </li>
+                            </ul>
+                            <a href="mailto:santhosh10419@gmail.com" class="text-decoration-none"><button class="border-0 but d-flex justify-content-center align-items-center"><i class="bi bi-envelope-arrow-up"></i></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="container-fluid part2 p-5">
+            <div class="row">
+                <div class="col-lg-6 text-center  p-3 text-white d-flex justify-content-center align-items-center">
+                    <div class="mt-3 pt-3">
+                        <h1>The JOURNEY enriches <br> the soul and the DESTINATION <br> awakens the SPIRIT.</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center p-3  d-flex justify-content-center align-items-center">
+                    <div class="mt-3 pt-3">
+                        <img class="w-50" src="./assets/bl1.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid part3 p-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <h1 class="text-center clc pb-5">Plan a Trip!</h1>
+                <div class="col-lg-3 col-12 mb-3">
+                    <a href="room.html" class="text-decoration-none">
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/card1.png" alt="Title" />
+                            <div class="card-body">
+                                <h4>REATAURENT</h4>
+                                <p> <i class="bi bi-check2-circle text-success"></i> Certified</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <a href="food.html" class="text-decoration-none">
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/card2.png" alt="Title" />
+                            <div class="card-body">
+                                <h4>DELICIOUS FOOD</h4>
+                                <p><i class="bi bi-check2-circle text-success"></i> Certified</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-12 mb-3">
+                    <a href="travel.html" class="text-decoration-none">
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/card3.png" alt="Title" />
+                            <div class="card-body">
+                                <h4>DESTINATIONS</h4>
+                                <p><i class="bi bi-check2-circle text-success"></i> Certified</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container-fluid part4 px-5 pb-5 pt-1">
+            <div class="row">
+                <div class="col-12">
+                    <img class="w-100" src="./assets/ind img.png" alt="" srcset="">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container-fluid vdd text-center">
+        <div class="row">
+            <h1 class="text-center clc pb-5">Order Your FOOD!</h1>
+            <div class="col-6 col-12 col-lg-4 pb-3 op">
+                <figure>  
+                    <a href="food.html"><img class="pb-3" src="https://img.freepik.com/premium-photo/shahi-paneer_57665-15284.jpg?size=626&ext=jpg&ga=GA1.1.1280705383.1695788065&semt=sph" alt="Title" />
+                    </a>
+                </figure>                
+                <figcaption>
+                    <button type="button"  data-toggle="modal" data-target="#productModal1">Book Now</button>
+                </figcaption>
+            </div>
+            <div class="col-6 col-12 col-lg-4 pb-3 op">
+                <figure>
+                    <img class="pb-3" src="https://img.freepik.com/free-photo/fork-holding-boneless-chicken-piece-with-sauce_23-2149973031.jpg?size=626&ext=jpg&ga=GA1.1.1280705383.1695788065&semt=sph" alt="Title" />
+
+                </figure>
+                <figcaption>
+                    <button type="button"  data-toggle="modal" data-target="#productModal2">Book Now</button>
+                </figcaption>
+            </div>
+            <div class="col-6 col-12 col-lg-4 pb-3  op">
+                <figure>
+                    <img class="pb-3" src="https://img.freepik.com/free-photo/hands-holding-shish-kebab-with-colorful-bell-peppers_141793-2931.jpg?size=626&ext=jpg&ga=GA1.1.1280705383.1695788065&semt=sph" alt="Title" />
+                </figure>
+                <figcaption>
+                    <button type="button"  data-toggle="modal" data-target="#productModal3">Book Now</button>
+                </figcaption>
+            </div>
+            <div class="col-6 col-12 col-lg-4 pb-3  op">
+                <figure>
+                    <img class="pb-3" src="https://img.freepik.com/free-photo/delicious-asian-noodles-concept_23-2148773773.jpg?size=626&ext=jpg&ga=GA1.1.1280705383.1695788065&semt=sph" alt="Title" />
+
+                </figure>  
+                <figcaption><button>Book Now</button></figcaption>              
+            </div>
+            <div class="col-6 col-12 col-lg-4 pb-3 op">
+        <figure>
+            <img class="pb-3" src="https://img.freepik.com/photos-premium/photo-realiste-pancake-closeup-food-photography_947498-150.jpg" alt="Title" />
+        </figure>                
+        <figcaption><button>Book Now</button></figcaption>
+            </div>
+            <div class="col-6 col-12 col-lg-4 pb-3 op">
+                <figure>
+                    <img class="pb-3" src="https://img.freepik.com/free-photo/vertical-shot-traditional-indian-paneer-butter-masala-cheese-cottage-curry-black-surface_181624-32001.jpg?size=626&ext=jpg&ga=GA1.1.1280705383.1695788065&semt=sph" alt="Title" />
+                </figure>                
+                <figcaption><button>Book Now</button></figcaption>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="productModal1" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content w-50">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+          
+              <img src="https://img.freepik.com/premium-photo/shahi-paneer_57665-15284.jpg?size=626&ext=jpg&ga=GA1.1.1280705383.1695788065&semt=sph" alt="Product Image" class="img-fluid">
+             
+              <div class="product-info">
+                <p class="pt-2"><strong>Product:</strong> Panner Masala</p>
+                <p><strong>Price:</strong><i class="bi bi-currency-rupee"></i>299</p>
+              </div>
+             
+              <form id="purchaseForm">
+                <div class="form-group">
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" class="form-control" id="quantity" required>
+                </div>
+                <button type="button" class="btn btn-success" id="validatePurchase">Buy Now</button>
+              </form>
+             
+              <div id="paymentSelection" style="display: none;">
+                <div class="form-group">
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <button type="button" class="btn btn-info mb-2" id="choosePhonePe">Get Link</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="productModal2" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content w-50">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+          
+              <img style="width: 100%; height: 180px;" src="https://img.freepik.com/free-photo/fork-holding-boneless-chicken-piece-with-sauce_23-2149973031.jpg?size=626&ext=jpg&ga=GA1.1.1280705383.1695788065&semt=sph" alt="Product Image" class="img-fluid">
+             
+              <div class="product-info">
+                <p class="pt-2"><strong>Product:</strong> Chicken Tikka</p>
+                <p><strong>Price:</strong><i class="bi bi-currency-rupee"></i>199</p>
+              </div>
+             
+              <form id="purchaseForm">
+                <div class="form-group">
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" class="form-control" id="quantity" required>
+                </div>
+                <button type="button" class="goton" id="validatePurchase">Buy Now</button>
+              </form>
+             
+              <div id="paymentSelection" style="display: none;">
+                <div class="form-group">
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <button type="button" class="btn btn-info mb-2" id="choosePhonePe">Get Link</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="productModal3" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content w-50">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+          
+              <img style="width: 100%; height: 200px;" src="https://img.freepik.com/free-photo/hands-holding-shish-kebab-with-colorful-bell-peppers_141793-2931.jpg?size=626&ext=jpg&ga=GA1.1.1280705383.1695788065&semt=sph" alt="Product Image" class="img-fluid">
+             
+              <div class="product-info">
+                <p class="pt-2"><strong>Product:</strong> Chicken Barbiq</p>
+                <p><strong>Price:</strong><i class="bi bi-currency-rupee"></i>349</p>
+              </div>
+             
+              <form id="purchaseForm">
+                <div class="form-group">
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" class="form-control" id="quantity" required>
+                </div>
+                <button type="button" class="btn btn-success" id="validatePurchase">Buy Now</button>
+              </form>
+             
+              <div id="paymentSelection" style="display: none;">
+                <div class="form-group">
+                  <label for="phone">Phone Number:</label>
+                  <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <button type="button" class="btn btn-info mb-2" id="choosePhonePe">Get Link</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <section class="container-fluid p-5 part5 trv">
+        <div class="row fag">
+            <h1 class="text-center clc pb-5">We take you to DESTINATION!</h1>
+            <div class="col-lg-3 col-md-6 col-12">
+                <figure>
+                    <i class="bi bi-browser-edge"></i>
+                    <figcaption>
+                        Research Your Destination: Learn about the place you're visiting, including its culture, language, customs, and any travel advisories or requirements.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <figure>
+                    <i class="bi bi-airplane-engines"></i>
+                    <figcaption>
+                        Make Travel Arrangements: Book your flights, trains, or other transportation well in advance to get the best deals and ensure availability documents.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <figure>
+                    <i class="bi bi-suitcase"></i>
+                    <figcaption>
+                        Pack Smartly:Pack versatile clothing, Don't forget important documents like passports, visas, travel insurance, and any necessary medications.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <figure>
+                    <i class="bi bi-bag-plus"></i>
+                    <figcaption>
+                        Health Precautions: Check if any health precautions or vaccinations are recommended for your destination, body checkups to overcome their weathers.   
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <figure>
+                    <i class="bi bi-bank"></i>
+                    <figcaption>
+                        Money Matters: Notify your bank of your travel plans to avoid any issues with using your cards abroad. Bring a mix of cash, credit/debit cards, and travel-friendly currency.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <figure>
+                    <i class="bi bi-bar-chart"></i>
+                    <figcaption>
+                        Communication: Arrange for a way to stay connected, whether it's through international roaming, purchasing a local SIM card, or using Wi-Fi hotspots.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <figure>
+                    <i class="bi bi-card-text"></i>
+                    <figcaption>
+                        Notify Trusted Contacts: Inform family or friends of your travel plans, including your itinerary and contact information for where you'll be staying.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <figure>
+                    <i class="bi bi-battery-charging"></i>
+                    <figcaption>
+                        Travel Gadgets: Don't forget to pack essential travel gadgets such as chargers, adapters, a power bank, and any other electronic devices you may need.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pb-2">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="mb-3 clc">Places may you like! </h3>
+                </div>
+                <div class="col-6 text-right">
+                    <a class="btn btn-success shadow-none border-0 mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                    <a class="btn btn-success shadow-none border-0 mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+    
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+    
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./assets/place1.png">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Maali Water-Falls</h4>
+                                                <p class="card-text">Most Visited Place Recently.</p>
+                                                <a href="" style="text-decoration:none;"><p>More</p></a>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./assets/place2.png">
+                                            <div class="card-body">
+                                                <h4 class="card-title">National Animal Park</h4>
+                                                <p class="card-text">Childrens Most Be-loved Place.</p>
+                                                <a href="" style="text-decoration: none;"><p>More</p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./assets/place3.png">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Mount Lama</h4>
+                                                <p class="card-text">Danger, Adventure Visiting Place.</p>
+                                                <a href="" style="text-decoration: none;"><p>More</p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+    
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./assets/place4.png">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Piolor Tower</h4>
+                                                <p class="card-text">Mostly famous for wedding shoots.</p>
+                                                <a href="" style="text-decoration: none;"><p>More</p></a>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./assets/place5.png">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Glass Lake</h4>
+                                                <p class="card-text">Collection of colourfull marbles.</p>
+                                                <a href="" style="text-decoration: none;"><p>More</p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280" src="./assets/place6.png">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Rikoa Resort</h4>
+                                                <p class="card-text">Well beloved place by visitors, for Rest.</p>
+                                                <a href="" style="text-decoration: none;"><p>More</p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid part6">
+        <h1 class="text-center pt-3 clc">Select Your Stay</h1>
+        <div class="row p-5">
+            <div class="col-lg-6">
+                <div class="text-center d-flex justify-content-center align-items-center">
+                    <div class="text-start mt-4">
+                        <h4>Arka Hotel</h4>
+                    <i class="bi bi-chevron-double-left"></i> Flexible Check inn <br>
+                    <i class="bi bi-chevron-double-left"></i> Extandable shifting rooms <br>
+                    <i class="bi bi-chevron-double-left"></i> Restaurant facility <br>
+                    <i class="bi bi-chevron-double-left"></i> Near to city <br>
+                    <i class="bi bi-chevron-double-left"></i> Available <i class="bi bi-wifi"></i> <i class="bi bi-tv"></i> <br>
+                   <div class="mt-2">
+                    <i class="bi bi-star-fill text-success"></i><i class="bi bi-star-fill text-success"></i><i class="bi bi-star-fill text-success"></i><i class="bi bi-star-fill text-success"></i><i class="bi bi-star-half text-success"></i>
+                    <a href="" style="text-decoration: none;"><p>More</p></a>
+                   </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 border-left d-flex justify-content-center align-items-center">
+                <img class="w-75" src="./assets/room1.png" alt="">
+            </div>
+            <hr class="m-5 w-75 text-center">
+            <div class="col-lg-6 pt-5 border-right d-flex justify-content-center align-items-center">
+                <img class="w-75" src="./assets/room2.png" alt="">
+            </div>
+            <div class="col-lg-6 pt-5">
+                <div class="text-center d-flex justify-content-center align-items-center">
+                    <div class="text-start mt-4">
+                        <h4>G Hotel</h4>
+                    <i class="bi bi-chevron-double-left"></i> Flexible Check inn <br>
+                    <i class="bi bi-chevron-double-left"></i> Extandable shifting rooms <br>
+                    <i class="bi bi-chevron-double-left"></i> Restaurant facility <br>
+                    <i class="bi bi-chevron-double-left"></i> Near to city <br>
+                    <i class="bi bi-chevron-double-left"></i> Available <i class="bi bi-wifi"></i> <i class="bi bi-tv"></i> <br>
+                   <div class="mt-2">
+                    <i class="bi bi-star-fill text-success"></i><i class="bi bi-star-fill text-success"></i><i class="bi bi-star-fill text-success"></i><i class="bi bi-star-fill text-success"></i><i class="bi bi-star text-success"></i>
+                    <a href="" style="text-decoration: none;"><p>More</p></a>
+                   </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid p-5 vd">
+        <div class="row">
+            <div class="col-12 col-6">
+                <div class="vd text-center">
+                    <div class="vt p-5">
+                        <h6>Stream</h6>
+                    <center><h1>OUR VIDEO</h1></center></div>
+                    <div class="p-2"><a href="vedio.html" target="_blank"><button class="bg-success shadow-none border-0 p-2">Watch</button></a></div>
+                </div>      
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid form-fill pt-5 p-5">
+        <h2 class="text-center text-white border-bottom pb-4 pt-3">Fill the Feild</h2>
+        <div class="row">
+            <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+               <div class="row">
+                <div class="col-6">
+                    
+                 <form action=""><h1>Date</h1>
+                    <input type="date" name="date" placeholder="Date" id="date"> </form> 
+                 <form action=""><h1>Time</h1>
+                        <input type="time" name="time" placeholder="Time" id="time"> </form>
+                 <form action=""><h1>People</h1>
+                            <input type="text" name="people" placeholder="People" id="people"> </form>
+            
+                </div>
+                <div class="col-6">
+                    <form action=""><h1>Name</h1>
+                        <input type="name" name="username" placeholder="Name" id="name"> </form> 
+                     <form action=""><h1>Phone</h1>
+                            <input type="tel" name="phone" placeholder="Phone" id="phone"> </form>
+                     <form action=""><h1>Email</h1>
+                                <input type="email" name="email" placeholder="Email" id="email"> </form>    
+                </div>
+                <div class="d-flex justify-content-start align-items-center text-center"><button class=" w-25 mt-5 "  onclick="Loan()">Book Now</button></div>
+               </div>
+            </div>
+            <div class="col-12 col-lg-6 main-button d-flex justify-content-center align-items-center">
+                <img class="w-100 p-5" src="./assets/world1.png" alt="" srcset="">
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <img class="w-50" src="./assets/world2.png" alt="" srcset="">
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <h1 class="text-center clc">
+                    We Customize Your <br> TRIP
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid d-flex justify-content-center align-items-center text-center bck">
+        <div class="row p-5">
+            <h3 class="text-center text-white mb-5">Find Your HOTEL!</h3>
+            <div class="row lay p-5">
+                <div class="col-lg-6">
+                    <img class="w-75 p-2" src="./assets/roombook.png" alt="" srcset="">
+                </div>
+                <div class="col-lg-6 text-center d-flex justify-content-center align-items-center">
+                    <button data-bs-target="#reg" data-bs-toggle="modal" id="main-but">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="modal fade" id="reg">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header lag">
+                    <img src="./assets/h-logo.png" class="w-25" alt="">
+                    <button data-bs-dismiss="modal" class="btn-close shadow-none border-0"></button>
+                </div>
+                <div class="modal-body lag">
+                    <h4 class="text-center">Book Now</h4>
+                    <form action="">
+                        <input type="text" name="name" id="name" class="form-control shadow-none border-0 mb-2" placeholder="Name">
+                        <input type="email" name="email" id="email" class="form-control shadow-none border-0 mb-2" placeholder="E-mail">
+                        <input type="tel" name="tel" id="tel" class="form-control shadow-none border-0 mb-2" placeholder="Mobile Number">
+                        <input type="password" name="password" id="password" class="form-control shadow-none border-0 mb-2" placeholder="Password">
+                        <div class="text-center d-flex justify-content-center subb align-items-center">
+                            <input type="submit" class="form-control w-25  shadow-none border-0 text-center" id="sub">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <footer class="container-fluid part1 d-flex justify-content-center align-items-center p-5">
+          <div class="row">
+            <div class="col-md-2 footer-block">
+              <img class="w-50" src="./assets/h-logo.png" alt="" srcset="">
+              <p><i class="bi bi-c-circle"></i>2024</p>
+              <p>MINI-WORLD PVT LTD</p>
+            </div>
+            <div class="col-md-2 footer-block">
+              <h5>Company</h5>
+              <p>About</p>
+              <p>Carrer</p>
+              <p>Travel</p>
+              <p>Food</p>
+              <p>Visit</p>
+            </div>
+            <div class="col-md-2 footer-block">
+              <h5>Contact us</h5>
+              <p>Help & Support</p>
+              <p>Partner with us</p>
+              <p>Ride with us</p> 
+            </div>
+            <div class="col-md-2 footer-block">
+              <h5>Legal</h5>
+              <p>Terms & Conditions</p>
+               <p>Cookie Policy</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="col-md-4 footer-block">
+              <h5>We Reach Upto</h5>
+              <p>Hyderabad</p>
+              <p>Kakinada</p>
+              <p>Banglore</p>
+              <p>Chenai</p>
+              <p><div class="btn-group">
+                <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="triggerId"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    More
+                </button>
+                <div
+                    class="dropdown-menu dropdown-menu-start"
+                    aria-labelledby="triggerId"
+                >
+                    <a class="dropdown-item" href="#">Pune</a>
+                    <a class="dropdown-item" href="#">Gujarath</a>
+                    <a class="dropdown-item" href="#">Manglore</a>
+                    <a class="dropdown-item" href="#">Delhi</a>
+                </div>
+              </div>
+              </p>
+            </div>
+          </div>
+        </footer>
+        
+        <a href="#" id="allb" class="btn btn-lg shadow-none border-0 btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <script src="logic.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $('#validatePurchase').on('click', function() {
+            // Validate the quantity
+            if($('#quantity').val() > 0) {
+              // Hide the purchase form and show the payment method selection
+              $('#purchaseForm').hide();
+              $('#paymentSelection').show();
+            } else {
+              alert('Please enter a valid quantity.');
+            }
+          });
+        
+          $('#choosePhonePe').on('click', function() {
+            // Validate the phone number
+            if($('#phone').val()) {
+              // Navigate to PhonePe payment
+              window.open('https://www.phonepe.com/', '_blank');
+            } else {
+              alert('Please enter a valid phone number.');
+            }
+          });
+        
+          $('#chooseGooglePay').on('click', function() {
+            // Validate the phone number
+            if($('#phone').val()) {
+              // Navigate to Google Pay payment
+              window.open('https://pay.google.com/', '_blank');
+            } else {
+              alert('Please enter a valid phone number.');
+            }
+          });
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-World</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <header class="container-fluid part1 p-0 mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark part1 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand ps-5" href="index.html"><img class="w-25" src="./assets/h-logo.png" alt="" srcset=""></a>
+                <button
+                    class="navbar-toggler shadow-none border-0"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="offcanvas offcanvas-start"
+                    style="background-color: rgba(5, 114, 99, 0.15); backdrop-filter: blur(10px);
+                    color: white;"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            Menu
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close text-reset btn-close-white shadow-none border-0"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="food.html">Food</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="room.html">Hotel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link dsh active"
+                                    aria-current="page"
+                                    href="travel.html"
+                                    >Travel</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="booktrip.html">MAKE A TRIP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dsh" href="contactus.html">Contact us</a>
+                            </li>
+                        </ul>
+                        <button class="border-0 but d-flex justify-content-center align-items-center"><i class="bi bi-envelope-arrow-up"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        <section class="container-fluid formbg p-5">
+            <div class="row">
+                <div class="col-lg-6 text-center p-3 text-white d-flex justify-content-center align-items-center">
+                    <div class="mt-3 pt-3">
+                        <h1>Fill all<br> the, categories <br>in the below form.</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center p-3  d-flex justify-content-center align-items-center">
+                    <div class="mt-3 pt-3">
+                        <img class="w-100" src="./assets/formimg.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container p-5">
+            <div class="row px-5">
+                <div class="col-lg-6 px-5">
+                    <div class="container">
+                        <h2 class="clc">Travel Confirm Form</h2>
+                        <form id="travelForm">
+                          <div class="form-group shadow-none border-0">
+                            <label for="destination">Destination:</label>
+                            <input type="text" class="form-control" id="destination" name="destination">
+                            <small class="error" id="destinationError"></small>
+                          </div>
+                          <div class="form-group shadow-none border-0">
+                            <label for="departureDate">Departure Date:</label>
+                            <input type="date" class="form-control" id="departureDate" name="departureDate">
+                            <small class="error" id="departureDateError"></small>
+                          </div>
+                          <div class="form-group shadow-none border-0">
+                            <label for="returnDate">Return Date:</label>
+                            <input type="date" class="form-control" id="returnDate" name="returnDate">
+                            <small class="error" id="returnDateError"></small>
+                          </div>
+                          <div class="form-group shadow-none border-0">
+                            <label for="numTravelers">Number of Travelers:</label>
+                            <input type="number" class="form-control" id="numTravelers" name="numTravelers" min="1" max="10">
+                            <small class="error" id="numTravelersError"></small>
+                          </div>
+                          <div class="form-group shadow-none border-0">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                            <small class="error" id="emailError"></small>
+                          </div>
+                          <button type="submit" class="goton ">Submit</button>
+                        </form>
+                      </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img class="w-75" src="./assets/form-img.png" alt="" srcset="">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-5 d-flex justify-content-center align-items-center">
+                    <img class="w-50" src="./assets/form-img1.png" alt="" srcset="">
+                </div>
+                <div class="col-lg-6 p-5">
+                    <div class="container">
+                        <h2 class="clc">Payment Form</h2>
+                        <form id="paymentForm">
+                          <div class="form-group">
+                            <label for="paymentMethod">Payment Method:</label>
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                              </div>
+                              <select class="form-control" id="paymentMethod">
+                                <option value="card">Credit/Debit Card</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="googlePay">Google Pay</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div id="cardDetails" class="form-group">
+                            <label for="cardNumber">Card Number:</label>
+                            <input type="text" class="form-control" id="cardNumber" name="cardNumber">
+                            <small class="error" id="cardNumberError"></small>
+                          </div>
+                          <div id="paypalDetails" class="form-group" style="display: none;">
+                            <label for="paypalEmail">PayPal Email:</label>
+                            <input type="email" class="form-control" id="paypalEmail" name="paypalEmail">
+                            <small class="error" id="paypalEmailError"></small>
+                          </div>
+                          <div id="googlePayDetails" class="form-group" style="display: none;">
+                            <label for="googlePay">Google Pay ID:</label>
+                            <input type="text" class="form-control" id="googlePay" name="googlePay">
+                            <small class="error" id="googlePayError"></small>
+                          </div>
+                          <button type="submit" class="goton">Pay</button>
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <footer class="container-fluid part1 d-flex justify-content-center align-items-center p-5">
+            <div class="row">
+              <div class="col-md-2 footer-block">
+                <img class="w-50" src="./assets/h-logo.png" alt="" srcset="">
+                <p><i class="bi bi-c-circle"></i>2024</p>
+                <p>MINI-WORLD PVT LTD</p>
+              </div>
+              <div class="col-md-2 footer-block">
+                <h5>Company</h5>
+                <p>About</p>
+                <p>Carrer</p>
+                <p>Travel</p>
+                <p>Food</p>
+                <p>Visit</p>
+              </div>
+              <div class="col-md-2 footer-block">
+                <h5>Contact us</h5>
+                <p>Help & Support</p>
+                <p>Partner with us</p>
+                <p>Ride with us</p> 
+              </div>
+              <div class="col-md-2 footer-block">
+                <h5>Legal</h5>
+                <p>Terms & Conditions</p>
+                 <p>Cookie Policy</p>
+                  <p>Privacy Policy</p>
+              </div>
+              <div class="col-md-4 footer-block">
+                <h5>We Reach Upto</h5>
+                <p>Hyderabad</p>
+                <p>Kakinada</p>
+                <p>Banglore</p>
+                <p>Chenai</p>
+                <p><div class="btn-group">
+                  <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      id="triggerId"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                  >
+                      More
+                  </button>
+                  <div
+                      class="dropdown-menu dropdown-menu-start"
+                      aria-labelledby="triggerId"
+                  >
+                      <a class="dropdown-item" href="#">Pune</a>
+                      <a class="dropdown-item" href="#">Gujarath</a>
+                      <a class="dropdown-item" href="#">Manglore</a>
+                      <a class="dropdown-item" href="#">Delhi</a>
+                  </div>
+                </div>
+                </p>
+              </div>
+            </div>
+          </footer>
+          
+  
+      <script src="logic.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+      <script>
+        document.getElementById('travelForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          validateTravelForm();
+        });
+    
+        function validateTravelForm() {
+          const destination = document.getElementById('destination').value.trim();
+          const departureDate = document.getElementById('departureDate').value.trim();
+          const returnDate = document.getElementById('returnDate').value.trim();
+          const numTravelers = document.getElementById('numTravelers').value.trim();
+          const email = document.getElementById('email').value.trim();
+    
+          document.getElementById('destinationError').innerText = '';
+          document.getElementById('departureDateError').innerText = '';
+          document.getElementById('returnDateError').innerText = '';
+          document.getElementById('numTravelersError').innerText = '';
+          document.getElementById('emailError').innerText = '';
+    
+          let isValid = true;
+    
+          if (destination === '') {
+            document.getElementById('destinationError').innerText = 'Destination is required';
+            isValid = false;
+          }
+    
+          if (departureDate === '') {
+            document.getElementById('departureDateError').innerText = 'Departure date is required';
+            isValid = false;
+          }
+    
+          if (returnDate === '') {
+            document.getElementById('returnDateError').innerText = 'Return date is required';
+            isValid = false;
+          }
+    
+          if (numTravelers === '') {
+            document.getElementById('numTravelersError').innerText = 'Number of travelers is required';
+            isValid = false;
+          }
+    
+          if (email === '') {
+            document.getElementById('emailError').innerText = 'Email is required';
+            isValid = false;
+          } else if (!isValidEmail(email)) {
+            document.getElementById('emailError').innerText = 'Invalid email address';
+            isValid = false;
+          }
+    
+          if (isValid) {
+            // Form is valid, you can submit it here or perform other actions
+            alert('Form submitted successfully!');
+            document.getElementById('travelForm').reset();
+          }
+        }
+    
+        function isValidEmail(email) {
+          // Simple email validation regex
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return emailRegex.test(email);
+        }
+      </script>
+
+<script>
+    document.getElementById('paymentForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      submitTravelPayment();
+    });
+
+    document.getElementById('paymentMethod').addEventListener('change', function() {
+      const selectedPaymentMethod = this.value;
+      const cardDetails = document.getElementById('cardDetails');
+      const paypalDetails = document.getElementById('paypalDetails');
+      const googlePayDetails = document.getElementById('googlePayDetails');
+
+      cardDetails.style.display = 'none';
+      paypalDetails.style.display = 'none';
+      googlePayDetails.style.display = 'none';
+
+      if (selectedPaymentMethod === 'card') {
+        cardDetails.style.display = 'block';
+      } else if (selectedPaymentMethod === 'paypal') {
+        paypalDetails.style.display = 'block';
+      } else if (selectedPaymentMethod === 'googlePay') {
+        googlePayDetails.style.display = 'block';
+      }
+    });
+
+    function submitTravelPayment() {
+      const paymentMethod = document.getElementById('paymentMethod').value;
+      let isValid = true;
+
+      if (paymentMethod === 'card') {
+        const cardNumber = document.getElementById('cardNumber').value.trim();
+        document.getElementById('cardNumberError').innerText = '';
+
+        if (cardNumber === '') {
+          document.getElementById('cardNumberError').innerText = 'Card number is required';
+          isValid = false;
+        } else if (!isValidCardNumber(cardNumber)) {
+          document.getElementById('cardNumberError').innerText = 'Invalid card number';
+          isValid = false;
+        }
+      } else if (paymentMethod === 'paypal') {
+        const paypalEmail = document.getElementById('paypalEmail').value.trim();
+        document.getElementById('paypalEmailError').innerText = '';
+
+        if (paypalEmail === '') {
+          document.getElementById('paypalEmailError').innerText = 'PayPal email is required';
+          isValid = false;
+        } else if (!isValidEmail(paypalEmail)) {
+          document.getElementById('paypalEmailError').innerText = 'Invalid PayPal email address';
+          isValid = false;
+        }
+      } else if (paymentMethod === 'googlePay') {
+        const googlePayId = document.getElementById('googlePay').value.trim();
+        document.getElementById('googlePayError').innerText = '';
+
+        if (googlePayId === '') {
+          document.getElementById('googlePayError').innerText = 'Google Pay ID is required';
+          isValid = false;
+        }
+      }
+
+      if (isValid) {
+        // Payment is valid, you can submit it here or perform other actions
+        alert('Payment submitted successfully!');
+        document.getElementById('paymentForm').reset();
+      }
+    }
+
+    function isValidCardNumber(cardNumber) {
+      // Simple card number validation regex (16 digits)
+      const cardNumberRegex = /^\d{16}$/;
+      return cardNumberRegex.test(cardNumber);
+    }
+
+    function isValidEmail(email) {
+      // Simple email validation regex
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+  </script>
+
+  </body>
+  </html>

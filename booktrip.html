@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-World</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet"/>
+    <link href="./owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+    <header class="container-fluid part1 p-0 mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark part1 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand ps-5" href="index.html"><img class="w-25" src="./assets/h-logo.png" alt="" srcset=""></a>
+                <button
+                    class="navbar-toggler shadow-none border-0"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="offcanvas offcanvas-start"
+                    style="background-color: rgba(5, 114, 99, 0.15); backdrop-filter: blur(10px);
+                    color: white;"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            Menu
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close text-reset btn-close-white shadow-none border-0"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="food.html">Food</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="room.html">Hotel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="travel.html">Travel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="booktrip.html"
+                                    >MAKE A TRIP</a
+                                >
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact us</a>
+                            </li>
+                        </ul>
+                        <button class="border-0 but d-flex justify-content-center align-items-center"><i class="bi bi-envelope-arrow-up"></i></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        <section class="container-fluid both p-5">
+            <div class="row">
+                <div class="col-lg-6 text-center p-3 text-white d-flex justify-content-center align-items-center">
+                    <div class="mt-3 display-2 pt-3">
+                        Eat healthy stay safe around the world!
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center p-3  d-flex justify-content-center align-items-center">
+                    <div class="">
+                        <img class="w-50" src="./assets/both1.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section class="container-fluid p-5">
+        <div class="row">
+            <h4 class="clc text-center mb-4">What we need in trip!</h4>
+            <div class="container-xxl py-6">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6 text-white wow fadeIn" data-wow-delay="0.1s">
+                            <div class="fact-item rounded text-center h-100 p-5">
+                                <i class="bi bi-backpack2 fa-4x mb-4"></i>
+                                <p class="mb-2">Pack Your Bags</p>
+                                <h1 class="display-5 mb-0" data-toggle="counter-up">Step-1</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 wow text-white fadeIn" data-wow-delay="0.1s">
+                            <div class="fact-item rounded text-center h-100 p-5">
+                                <i class="bi bi-file-earmark-pdf fa-4x mb-4"></i>
+                                <p class="mb-2">Check Documents</p>
+                                <h1 class="display-5 mb-0" data-toggle="counter-up">Step-2</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-white wow fadeIn" data-wow-delay="0.1s">
+                            <div class="fact-item rounded text-center h-100 p-5">
+                                <i class="bi bi-hospital fa-4x mb-4"></i>
+                                <p class="mb-2">Health Chek-Up</p>
+                                <h1 class="display-5 mb-0" data-toggle="counter-up">Step-3</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 text-white wow fadeIn" data-wow-delay="0.1s">
+                            <div class="fact-item rounded text-center h-100 p-5">
+                                <i class="bi bi-cash-stack fa-4x mb-4"></i>
+                                <p class="mb-2">Money</p>
+                                <h1 class="display-5 mb-0" data-toggle="counter-up">Step-4</h1>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <section class="container-fluid px-5">
+        <div class="row">
+            <div class="col-12 p-5">
+                
+    <div class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-4 clc mb-4">What Do We Offer For You?</h1>
+                    <p class="mb-5">Company's got it covered, just step in and savor every moment. Sit back, relax, and let the journey unfold. All set for an unforgettable adventure, your only task is to embrace the experience.</p>
+                    <div class="row gy-5 gx-4">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 me-3">
+                                    <i class="bi bi-egg-fried"></i>
+                                </div>
+                                <h5 class="mb-0">Quality Food</h5>
+                            </div>
+                            <span>Indulge in delectable dishes crafted with care and quality ingredients.</span>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 me-3">
+                                    <i class="bi bi-backpack"></i>
+                                </div>
+                                <h5 class="mb-0">Packing Bags</h5>
+                            </div>
+                            <span>Your bag packed with all the essentials for a seamless journey ahead.</span>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 me-3">
+                                    <i class="bi bi-bandaid"></i>
+                                </div>
+                                <h5 class="mb-0">Health Check-up</h5>
+                            </div>
+                            <span>Enjoy the peace of mind with a complimentary health check-up before you embark on your travels.</span>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 me-3">
+                                    <i class="bi bi-option"></i>
+                                </div>
+                                <h5 class="mb-0">EMI Flexibility</h5>
+                            </div>
+                            <span>Ease into your travels with the convenience of paying for your trip through flexible EMI options.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row img-twice position-relative h-100">
+                        <div class="col-6">
+                            <img class="img-fluid rounded" src="./assets/side1.png" alt="">
+                        </div>
+                        <div class="col-6 align-self-end">
+                            <img class="img-fluid rounded" src="./assets/side2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<section class="container-fluid bgc">
+    <div class="row g-4 align-items-center">
+        <div class="col-lg-6 pb-3">
+            <h1 class="display-4 p-3 text-light mb-0">The Best Travels In Your City</h1>
+        </div>
+        <div class="col-lg-6 text-lg-end pe-5 pb-3">
+            <div class="d-inline-flex align-items-center text-start">
+                <i class="bi bi-telephone-plus-fill text-white display-2 fa-4x flex-shrink-0"></i>
+                <div class="ms-4">
+                    <p class="fs-5 fw-bold text-white mb-0">Call Us</p>
+                    <p class="fs-1 fw-bold text-white mb-0">630 964 5577</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="container-fluid mb-3  p-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row p-0 boxx">
+                  <div class="col-md-6 p-5 d-flex justify-content-center align-items-center" style="min-height: 50vh;">
+                    <div>
+                      <h2 class="clc">Road Trip Guide</h2>
+                      <p>Gear up for your road trip adventure with insider tips on routes, rental cars, and local insights. Explore diverse landscapes and vibrant cultures, making every mile a memory to cherish.</p>
+                      <a href="#"><button class="goton">Learn more</button></a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 p-0">
+                    <img src="./assets/rd.png" alt="Coastal Scene" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid bgc">
+    <div class="row g-4 align-items-center">
+        <div class="col-lg-6 pb-3">
+            <h1 class="display-4 p-3 text-light mb-0">This page is only for combo of food, hotel stay and travel.</h1>
+        </div>
+        <div class="col-lg-6 text-lg-end pe-5 pb-3">
+            <div class="d-inline-flex align-items-center text-start">
+                <i class="bi bi-telephone-plus-fill text-white display-2 fa-4x flex-shrink-0"></i>
+                <div class="ms-4">
+                    <p class="fs-5 fw-bold text-white mb-0">Call Us</p>
+                    <p class="fs-1 fw-bold text-white mb-0">912 173 2577</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-xxl pt-5 pb-5 py-6">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row img-twice position-relative h-100">
+                    <div class="col-6">
+                        <img class="img-fluid rounded" src="./assets/both3.png" alt="">
+                    </div>
+                    <div class="col-6 align-self-end">
+                        <img class="img-fluid rounded" src="./assets/both4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="display-4 clc mb-4">Our Promises to you?</h1>
+                <p class="mb-5">Rest assured, your safety is our top priority as we promise to ensure a secure journey from start to finish. With our commitment to your well-being, we guarantee a safe return home, filled with cherished memories of your travels.</p>
+                <div class="row gy-5 gx-4">
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0 me-3">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
+                            <h5 class="mb-0">Safe Trip</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0 me-3">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
+                            <h5 class="mb-0">Quality Food</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0 me-3">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
+                            <h5 class="mb-0">Afordable Price</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0 me-3">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
+                            <h5 class="mb-0">Equality</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="container-fluid pt-4 pb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row p-0 boxx">
+                  <div class="col-md-4 p-5 d-flex justify-content-center align-items-center" style="min-height: 50vh;">
+                    <div>
+                      <h2 class="clc">Aroma Island</h2>
+                      <p>Aroma Island captivates with its secluded enclaves,and adventure. From hidden coves to lush forests, it's a paradise waiting to be explored.</p>
+                      <a href="#"><button class="goton">Learn more</button></a>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-0">
+                    <img src="./assets/ad1.png" alt="Coastal Scene" class="img-fluid">
+                  </div>
+                  <div class="col-md-4 p-5 d-flex lft justify-content-center align-items-center" style="min-height: 50vh;">
+                    <div>
+                        <h4 class="pt-3"><i class="bi bi-currency-rupee"></i>15990 <span class="prc">Inclue Tax</span></h4>
+                        <p>including food, hotel stay, travel</p>
+                        <a href="booktripvalid.html"><button class="goton">Get Now</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid pt-4 pb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row p-0 boxx">
+                  <div class="col-md-4 p-5 d-flex justify-content-center rft align-items-center" style="min-height: 50vh;">
+                    <div>
+                      <h2 class="clc">Khaalidh Mountains</h2>
+                      <p>Khalidh Mountains adventure and bonding amidst stunning natural beauty. Explore winding paths,memories in this outdoor playground.</p>
+                      <a href="#"><button class="goton">Learn more</button></a>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-0">
+                    <img src="./assets/ad2.png" alt="Coastal Scene" class="img-fluid">
+                  </div>
+                  <div class="col-md-4 p-5 d-flex justify-content-center align-items-center" style="min-height: 50vh;">
+                    <div>
+                        <h4 class="pt-3"><i class="bi bi-currency-rupee"></i>12990 <span class="prc">Inclue Tax</span></h4>
+                        <p>including food, hotel stay, travel</p>
+                        <a href="booktripvalid.html"><button class="goton">Get Now</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid pt-4 pb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row p-0 boxx">
+                  <div class="col-md-4 p-5 d-flex justify-content-center align-items-center" style="min-height: 50vh;">
+                    <div>
+                      <h2 class="clc">Angelina Waterfalls</h2>
+                      <p>Angelina Waterfalls stands as a renowned marvel of nature,and cascading streams. However,adventure not for the faint of heart, but for the bold and daring.</p>
+                      <a href="#"><button class="goton">Learn more</button></a>
+                    </div>
+                  </div>
+                  <div class="col-md-4 p-0">
+                    <img src="./assets/ad3.png" alt="Coastal Scene" class="img-fluid">
+                  </div>
+                  <div class="col-md-4 p-5 d-flex justify-content-center align-items-center lft" style="min-height: 50vh;">
+                    <div>
+                        <h4 class="pt-3"><i class="bi bi-currency-rupee"></i>17990 <span class="prc">Inclue Tax</span></h4>
+                        <p>including food, hotel stay, travel</p>
+                        <a href="booktripvalid.html"><button class="goton">Get Now</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="container-fluid">
+<div class="row">
+    <div class="col-12 p-5">
+        <h2 class="clc text-center">Separate Pack for each</h2>
+
+        <div class="row g-4 p-5">
+            
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                    <div class="text-center p-4">
+                        <div class="d-inline-block border border-primary rounded-pill px-3 mb-3"><i class="bi bi-currency-rupee"></i>399</div>
+                        <h3 class="mb-3">Food</h3>
+                        <span>Based on the trip requirment chagrges applied.</span>
+                    </div>
+                    <div class="position-relative mt-auto">
+                        <img class="img-fluid" src="./assets/pro1.png" alt="">
+                        <div class="product-overlay">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle" href="">Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                    <div class="text-center p-4">
+                        <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3"><i class="bi bi-currency-rupee"></i>1499</div>
+                        <h3 class="mb-3">Hotel</h3>
+                        <span>Based on time had stayed in the hotel.</span>
+                    </div>
+                    <div class="position-relative mt-auto">
+                        <img class="img-fluid" src="./assets/pro2.png" alt="">
+                        <div class="product-overlay">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle" href="">Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                    <div class="text-center p-4">
+                        <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3"><i class="bi bi-currency-rupee"></i>2099</div>
+                        <h4 class="mb-3">Travel</h4>
+                        <span>Based on the period time taken to return</span>
+                    </div>
+                    <div class="position-relative mt-auto">
+                        <img class="img-fluid" src="./assets/pro3.png" alt="">
+                        <div class="product-overlay">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle" href="">Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<style>
+     .stretch-card>.card {
+     width: 100%;
+     min-width: 100%
+ }
+
+ body {
+     background-color: #f9f9fa
+ }
+
+ .flex {
+     -webkit-box-flex: 1;
+     -ms-flex: 1 1 auto;
+     flex: 1 1 auto
+ }
+
+ @media (max-width:991.98px) {
+     .padding {
+         padding: 1.5rem
+     }
+ }
+
+ @media (max-width:767.98px) {
+     .padding {
+         padding: 1rem
+     }
+ }
+
+ .padding {
+     padding: 3rem
+ }
+
+
+.owl-carousel .item{
+  margin: 3px;
+}
+.owl-carousel .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-carousel .item {
+    margin: 3px;
+}
+
+.owl-carousel{
+    margin-bottom:15px;
+}
+</style>
+
+<section class="container-fluid">
+<div class="row">
+<div class="col-12">
+    <div class="page-content page-container" id="page-content">
+        <div class="padding">
+            <div class="row container-fluid">
+    <div class="col-lg-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="clc">Trip Package</h4>
+                      <div class="owl-carousel">
+                        <div class="item">
+                          <img src="./assets/pack1.png" alt="image"/>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/pack2.png" alt="image"/>
+                          </div>
+                          <div class="item">
+                            <img src="./assets/pack3.png" alt="image"/>
+                          </div>
+                          <div class="item">
+                            <img src="./assets/pack4.png" alt="image"/>
+                          </div>
+                          <div class="item">
+                            <img src="./assets/pack5.png" alt="image"/>
+                          </div>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </section>
+
+                <style>
+                    .testimonial-carousel .owl-item .testimonial-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.testimonial-carousel .owl-item .testimonial-item,
+.testimonial-carousel .owl-item .testimonial-item * {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: rgb(8,128,140);
+   background: linear-gradient(180deg, #003135ad 100%, rgba(255,255,255,1) 87%) !important;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item * {
+    color: #FFFFFF !important;
+}
+
+.testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    margin: 0 12px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 22px;
+    color: white;
+    background: rgb(8,128,140);
+    background: linear-gradient(180deg, #003135ad 100%, rgba(255,255,255,1) 87%) !important;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: white;
+    background: #003135;
+}
+                </style>
+
+                <section class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container-xxl bg-light my-6 py-6 pb-0">
+                                <div class="container">
+                                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                                        <h1 class="display-6 mb-4">More Than 2000+ Customers Trusted Us</h1>
+                                    </div>
+                                    <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                                        <div class="testimonial-item bg-white rounded p-4">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img class="flex-shrink-0 rounded-circle border p-1" src="./assets/rew1.png" alt="">
+                                                <div class="ms-4">
+                                                    <h5 class="mb-1">Emily Chen</h5>
+                                                    <span>Marketing Manager</span>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Impressive travel facilities that catered to every need, from comfortable accommodations to efficient transportation arrangements.</p>
+                                        </div>
+                                        <div class="testimonial-item bg-white rounded p-4">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img class="flex-shrink-0 rounded-circle border p-1" src="./assets/rew2.png" alt="">
+                                                <div class="ms-4">
+                                                    <h5 class="mb-1">Michael Rodriguez</h5>
+                                                    <span>Financial Analyst</span>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">A stress-free journey from start to finish. Definitely my preferred choice for future trips.</p>
+                                        </div>
+                                        <div class="testimonial-item bg-white rounded p-4">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img class="flex-shrink-0 rounded-circle border p-1" src="./assets/rew4.png" alt="">
+                                                <div class="ms-4">
+                                                    <h5 class="mb-1">David Lee</h5>
+                                                    <span>Software Engineer</span>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">The travel facilities provided exceeded my expectations, making my trip smooth and enjoyable. Highly recommended for both business and leisure travelers.</p>
+                                        </div>
+                                        <div class="testimonial-item bg-white rounded p-4">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img class="flex-shrink-0 rounded-circle border p-1" src="./assets/rew3.png" alt="">
+                                                <div class="ms-4">
+                                                    <h5 class="mb-1">Sarah Johnson</h5>
+                                                    <span>Student</span>
+                                                </div>
+                                            </div>
+                                            <p class="mb-0">Exceptional travel facilities with top-notch service and seamless experiences throughout my journey.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                
+
+        <footer class="container-fluid part1 d-flex justify-content-center align-items-center p-5">
+            <div class="row">
+              <div class="col-md-2 footer-block">
+                <img class="w-50" src="./assets/h-logo.png" alt="" srcset="">
+                <p><i class="bi bi-c-circle"></i>2024</p>
+                <p>MINI-WORLD PVT LTD</p>
+              </div>
+              <div class="col-md-2 footer-block">
+                <h5>Company</h5>
+                <p>About</p>
+                <p>Carrer</p>
+                <p>Travel</p>
+                <p>Food</p>
+                <p>Visit</p>
+              </div>
+              <div class="col-md-2 footer-block">
+                <h5>Contact us</h5>
+                <p>Help & Support</p>
+                <p>Partner with us</p>
+                <p>Ride with us</p> 
+              </div>
+              <div class="col-md-2 footer-block">
+                <h5>Legal</h5>
+                <p>Terms & Conditions</p>
+                 <p>Cookie Policy</p>
+                  <p>Privacy Policy</p>
+              </div>
+              <div class="col-md-4 footer-block">
+                <h5>We Reach Upto</h5>
+                <p>Hyderabad</p>
+                <p>Kakinada</p>
+                <p>Banglore</p>
+                <p>Chenai</p>
+                <p><div class="btn-group">
+                  <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      id="triggerId"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                  >
+                      More
+                  </button>
+                  <div
+                      class="dropdown-menu dropdown-menu-start"
+                      aria-labelledby="triggerId"
+                  >
+                      <a class="dropdown-item" href="#">Pune</a>
+                      <a class="dropdown-item" href="#">Gujarath</a>
+                      <a class="dropdown-item" href="#">Manglore</a>
+                      <a class="dropdown-item" href="#">Delhi</a>
+                  </div>
+                </div>
+                </p>
+              </div>
+            </div>
+          </footer>
+
+          <a href="#" id="allb" class="btn btn-lg shadow-none border-0 btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+          
+  
+      <script src="logic.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+      <script src="lib/counterup/counterup.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+      <script src="./owlcarousel/owl.carousel.min.js"></script>
+
+      <script>
+        $(".testimonial-carousel").owlCarousel({
+autoplay: false,
+smartSpeed: 1000,
+margin: 25,
+loop: true,
+center: true,
+dots: false,
+nav: true,
+navText : [
+'<i class="bi bi-chevron-left"></i>',
+'<i class="bi bi-chevron-right"></i>'
+],
+responsive: {
+0:{
+    items:1
+},
+768:{
+    items:2
+},
+992:{
+    items:3
+}
+}
+});
+    </script>
+
+        <script>
+            
+$(document).ready(function() {
+ 
+ $(".owl-carousel").owlCarousel({
+
+     autoPlay: 3000,
+     items : 4,
+     itemsDesktop : [1199,3],
+     itemsDesktopSmall : [979,3],
+     center: true,
+     nav:true,
+     loop:true,
+     responsive: {
+       600: {
+         items: 4
+       }
+     }  
+
+ });
+
+});
+        </script>
+  </body>
+  </html>
